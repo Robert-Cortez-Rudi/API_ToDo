@@ -4,6 +4,9 @@ from typing import Any
 from services.user_service import UserService
 from core.security import create_access_token, create_refresh_token
 from schemas.auth_schema import TokenSchema
+from schemas.user_schema import UserDetail
+from models.user_model import User
+from api.dependencies.user_deps import get_current_user
 
 auth_router = APIRouter()
 
@@ -24,3 +27,8 @@ async def login(data: OAuth2PasswordRequestForm = Depends()) -> Any:
         "access_token": create_access_token(usuario.user_id),
         "refresh_token": create_refresh_token(usuario.user_id)
     }
+
+
+@auth_router.post("/teste-token", summary="Testando o token", response_model=UserDetail)
+async def teste_token(user: User = Depends(get_current_user)):
+    return user
