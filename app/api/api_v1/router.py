@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from api.api_v1.handlers.user import user_router
 from api.auth.jwt import auth_router
+from api.api_v1.handlers.task import task_router
 
 router = APIRouter()
 
@@ -10,4 +11,8 @@ router.include_router(
 
 router.include_router(
     auth_router, prefix="/auth", tags=["auth"]
+)
+
+router.include_router(
+    task_router, prefix="/tasks", tags=["tasks"]
 )
