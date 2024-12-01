@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, status
-from schemas.user_schema import UserAuth, UserDetail
-from services.user_service import UserService
+from app.schemas.user_schema import UserAuth, UserDetail
+from app.services.user_service import UserService
 import pymongo
 
 user_router = APIRouter()
