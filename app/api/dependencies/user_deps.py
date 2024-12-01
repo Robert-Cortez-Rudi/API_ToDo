@@ -1,12 +1,12 @@
 from fastapi.security import OAuth2PasswordBearer
 from fastapi import Depends, HTTPException, status
-from models.user_model import User
+from app.models.user_model import User
 from jose import jwt 
-from core.config import settings
-from schemas.auth_schema import TokenPayload
+from app.core.config import settings
+from app.schemas.auth_schema import TokenPayload
 from datetime import datetime
 from pydantic import ValidationError
-from services.user_service import UserService
+from app.services.user_service import UserService
 
 oauth_reusavel = OAuth2PasswordBearer(
     tokenUrl=f"{settings.API_V1_STR}/auth/login",
