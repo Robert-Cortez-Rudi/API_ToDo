@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
-from schemas.task_schema import TaskDetail, TaskCreate, TaskUpdate
-from models.user_model import User
-from api.dependencies.user_deps import get_current_user
-from services.task_service import TaskService
-from models.task_model import Task
+from app.schemas.task_schema import TaskDetail, TaskCreate, TaskUpdate
+from app.models.user_model import User
+from app.api.dependencies.user_deps import get_current_user
+from app.services.task_service import TaskService
+from app.models.task_model import Task
 from typing import List
 from uuid import UUID
 
