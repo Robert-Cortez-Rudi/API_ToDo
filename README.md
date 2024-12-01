@@ -2,6 +2,10 @@
 
 Esse projeto é uma API RESTful para gerenciamento de tarefas, desde o cadastro de usuário, autenticação de usuario, geração de JWT Token e sua validação, criação, listagem, atualização e exclusão de tarefas.
 
+Esta API foi hospedada e é possivel acessa-la no seguinte link: https://api-todo-ywsj.onrender.com/
+
+Obs: por ele estar hospedado dentro de um plano gratuito, a API pode demorar um pouco para responder as requisições.
+
 ## Como funciona ⚙️
 
 Para ter acesso as funcionalidades, é preciso acessar o endpoint `/docs`. Outro ponto a ser destacado é que para a criação de tarefas e a geração do JWT token, é preciso estar autenticado com a conta que foi criada para poder ter acesso as funcionalidades da API, ou seja, para isso é preciso fazer o cadastro de usuário e autenticação de usuário.
