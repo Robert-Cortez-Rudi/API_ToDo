@@ -1,6 +1,6 @@
-from models.user_model import User
-from schemas.user_schema import UserAuth
-from core.security import get_password, verify_password
+from app.models.user_model import User
+from app.schemas.user_schema import UserAuth
+from app.core.security import get_password, verify_password
 from typing import Optional
 from uuid import UUID
 
