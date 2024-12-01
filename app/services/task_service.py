@@ -1,7 +1,7 @@
-from models.user_model import User
-from models.task_model import Task
+from app.models.user_model import User
+from app.models.task_model import Task
 from typing import List
-from schemas.task_schema import TaskCreate, TaskUpdate
+from app.schemas.task_schema import TaskCreate, TaskUpdate
 from uuid import UUID
 
 class TaskService:
