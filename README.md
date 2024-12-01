@@ -57,6 +57,9 @@ As tarefas são criadas, listadas, atualizadas e excluidas com seus determinados
 
     `http://localhost:8000/docs`
 
+
+![API](api.png)
+
 ## Como contribuir 🤝🏻
 
 Caso tenha interesse em contribuir para o projeto, sinta-se a vontade para fazer um pull request, seja com alguma correção ou melhoria, ou até mesmo com uma nova funcionalidade!
