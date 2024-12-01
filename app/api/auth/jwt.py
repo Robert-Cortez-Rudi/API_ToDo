@@ -1,12 +1,12 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from typing import Any
-from services.user_service import UserService
-from core.security import create_access_token, create_refresh_token
-from schemas.auth_schema import TokenSchema
-from schemas.user_schema import UserDetail
-from models.user_model import User
-from api.dependencies.user_deps import get_current_user
+from app.services.user_service import UserService
+from app.core.security import create_access_token, create_refresh_token
+from app.schemas.auth_schema import TokenSchema
+from app.schemas.user_schema import UserDetail
+from app.models.user_model import User
+from app.api.dependencies.user_deps import get_current_user
 
 auth_router = APIRouter()
 
