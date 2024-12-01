@@ -1,10 +1,10 @@
 from fastapi import FastAPI
-from core.config import settings
+from app.core.config import settings
 from beanie import init_beanie
 from motor.motor_asyncio import AsyncIOMotorClient
-from models.user_model import User
-from models.task_model import Task
-from api.api_v1.router import router
+from app.models.user_model import User
+from app.models.task_model import Task
+from app.api.api_v1.router import router
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
